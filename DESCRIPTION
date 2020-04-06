@@ -1,0 +1,19 @@
+Package: deconvML
+Type: Package
+Title: A single cell data resource
+Version: 0.1.0
+Authors@R: c(person("Alicia", "Gómez Pascual", email = "alicia.gomez1@um.es", 
+    role = c("aut", "cre")), person("Juan A.", "Botía Blaya", role = "aut"))
+Description: A single cell data resource. It consists of a catalog through which the user can 
+    answer questions about their dataset in relation to the number of genes and cells that 
+    compose it, the different tissues and cell types included, and the methods available to 
+    estimate the active genes. Finally, it estimates the active genes for a certain cell type 
+    included in a tissue for a specific method and dataset.
+License: Creative Commons
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
