@@ -39,7 +39,7 @@ In this documentation, we will use as data set with this type of structure, Zhei
 First, we install the deconvML package through the following command: 
 
 ```{r, eval=FALSE}
-devtools::install_github('/deconvML')
+devtools::install_github('AliciaGP/deconvML')
 ```
 
 

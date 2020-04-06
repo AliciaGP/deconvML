@@ -1,5 +1,6 @@
 #' List data sets included
-#' @description getDataSetList shows data sets included as they are loom class variables.
+#' @description getDataSetList shows data sets included as they are loom class
+#'   variables.
 #' @return vector of strings with the data sets included.
 #' @example /home/aligo/deconvML/vignettes
 
@@ -12,7 +13,7 @@ getDataSetList <- function() {
   if (length(datasets) != 0) {
     return(datasets)
   } else {
-    return ("No dataset loaded")
+    return("No dataset loaded")
   }
 
 }
@@ -62,7 +63,7 @@ getCellTypesInDataSet <- function(dataset) {
       cellTypes <- NULL
   }
 
-  if (length(cellTypes)!=0) {
+  if (length(cellTypes) != 0) {
     return(cellTypes)
 
   } else {
@@ -90,7 +91,7 @@ getTissueTypesInDataSet <- function(dataset) {
     tissueTypes <- NULL
   }
 
-  if (length(tissueTypes)!=0) {
+  if (length(tissueTypes) != 0) {
 
     return(tissueTypes)
 
@@ -119,10 +120,10 @@ getActiveGeneMethod <- function(dataset) {
 
       methods <-  NULL
       }
-  if (length(methods)!=0) {
+  if (length(methods) != 0) {
     return(methods)
   } else {
-    return ("No methods found")
+    return("No methods found")
   }
 }
 
@@ -142,7 +143,7 @@ getActiveGeneMethod <- function(dataset) {
 #'   calculus method.
 #' @example /home/aligo/deconvML/vignettes
 
-getActiveGenesInCellType <- function (dataset, tissue, celltype, method){
+getActiveGenesInCellType <- function(dataset, tissue, celltype, method) {
 
   expr.data <- readRDS(paste0(dataset, "_", tissue, "_", method, ".rds"))
 
