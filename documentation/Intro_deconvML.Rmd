@@ -1,14 +1,10 @@
 ---
 title: "How to use deconvML package"
 author: "Alicia Gómez Pascual"
-date: "04/04/2020"
-output: rmarkdown::html_vignette
+date: "06/04/2020"
+output: html_document
 bibliography: references.bib
 link-citations: yes
-vignette: >
-  %\VignetteIndexEntry{How to use deconvML package}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r, include = FALSE}
@@ -38,8 +34,12 @@ In this documentation, we will use as data set with this type of structure, Zhei
 
 First, we install the deconvML package through the following command: 
 
-```{r, eval=FALSE}
+```{r}
 devtools::install_github('AliciaGP/deconvML')
+```
+
+
+```{r}
 library(deconvML)
 ```
 
